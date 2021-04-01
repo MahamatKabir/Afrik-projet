@@ -1,0 +1,736 @@
+
+<!-- css animation navbar<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+</head>
+<body>
+<style type="text/css">
+
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        position: fixed;
+        display: flex;
+        align-items: flex-start;
+        width: 20%;
+        height: 100%;
+        background-color: #111;
+    }
+    main {
+        position: fixed;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        overflow: auto;
+        padding: 40px;
+    }
+    h1 {
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size: 55px;
+        text-align: center;
+    }
+    p {
+        margin-bottom: 20px;
+        line-height: 26px;
+    }
+    p::first-letter {
+        font-size: 200%;
+        font-weight: bold;
+    }
+    li, ul label.title, ul, a {
+        width: 100%;
+        color: #FFF;
+        font-family: 'Montserrat', 'Open Sans', sans-serif;
+        display: block;
+        font-weight: bold;
+    }
+    ul label {
+        height: 35px;
+    }
+    ul li{
+        height: 35px;
+        overflow: hidden;
+        transition: all .3s;
+    }
+    li {
+        display: block;
+        background-color: #363636;
+    }
+    label.title {
+        font-size: 14px;
+        background: linear-gradient(#111, #2f2f2f);
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: all .25s;
+    }
+    a{
+        font-size: 12px;
+        text-decoration: none;
+        color: #FFF;
+        display: block;
+        padding: 10px 25px;
+        transition: all .25s;
+    }
+    a:hover {
+        background-color: #444;
+        box-shadow: inset 5px 0px 0px 0px #fff;
+    }
+    label:hover {
+        text-shadow: 0px 0px 10px #fff;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    #edit:checked + li, #archive:checked + li, #tools:checked + li, #preferences:checked + li {
+        height: 179px;
+    }
+    i {
+        margin-right: 12px;
+    }
+    @media screen and (max-width: 600px){
+        nav {
+            width: 100%;
+            position: relative;
+        }
+        main {
+            width: 100%;
+            position: relative;
+        }
+    }
+
+
+
+</style>
+<div class="container">
+    <nav class="menu">
+        <ul>
+            <input type="radio" name="menu" id="archive" checked>
+            <li>
+                <label for="archive" class="title"><i class="fa fa-folder"></i>Arşiv</label>
+                <a href="#">Yeni Dosya</a>
+                <a href="#">Dosya Aç</a>
+                <a href="#">Kaydet</a>
+                <a href="#">Çıkış</a>
+            </li>
+            <input type="radio" name="menu" id="edit">
+            <li>
+                <label for="edit" class="title"><i class="fa fa-edit"></i>Düzenle</label>
+                <a href="#">Kopyala</a>
+                <a href="#">Kes</a>
+                <a href="#">Yapıştır</a>
+                <a href="#">Geri Al</a>
+            </li>
+            <input type="radio" name="menu" id="tools">
+            <li>
+                <label for="tools" class="title"><i class="fa fa-gavel"></i>Araçlar</label>
+                <a href="#">Araç1</a>
+                <a href="#">Araç2</a>
+                <a href="#">Ara31</a>
+                <a href="#">Araç4</a>
+            </li>
+            <input type="radio" name="menu" id="preferences">
+            <li>
+                <label for="preferences" class="title"><i class="fa fa-gears"></i>Ayarlar</label>
+                <a href="#">Tarayıcı</a>
+                <a href="#">Ayarlar</a>
+                <a href="#">Sayfalar</a>
+                <a href="#">Temalar</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+</body>
+</html>-->
+<!-- css navbar animation<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+
+</head>
+<style type="text/css">
+    nav {
+        margin: 27px auto 0;
+
+        position: relative;
+        width: 590px;
+        height: 50px;
+        background-color: #34495e;
+        border-radius: 8px;
+        font-size: 0;
+    }
+    nav a {
+        line-height: 50px;
+        height: 100%;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        transition: all .5s ease 0s;
+        border-radius: 8px;
+    }
+    a:nth-child(1) {
+        width: 100px;
+    }
+    a:nth-child(2) {
+        width: 110px;
+    }
+    a:nth-child(3) {
+        width: 100px;
+    }
+    a:nth-child(4) {
+        width: 160px;
+    }
+    a:nth-child(5) {
+        width: 120px;
+    }
+    nav .start-home, a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+        background-color: #1abc9c;
+    }
+    nav .start-about, a:nth-child(2):hover~.animation {
+        width: 110px;
+        left: 100px;
+        background-color: #e74c3c;
+    }
+    nav .start-blog, a:nth-child(3):hover~.animation {
+        width: 100px;
+        left: 210px;
+        background-color: #3498db;
+    }
+    nav .start-portefolio, a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 310px;
+        background-color: #9b59b6;
+    }
+    nav .start-contact, a:nth-child(5):hover~.animation {
+        width: 120px;
+        left: 470px;
+        background-color: #e67e22;
+    }
+
+    body {
+        font-size: 12px;
+        font-family: sans-serif;
+        background: #2c3e50;
+    }
+    h1 {
+        text-align: center;
+        margin: 40px 0 40px;
+        text-align: center;
+        font-size: 30px;
+        color: #ecf0f1;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: 'Cherry Swash', cursive;
+    }
+
+    p {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: #ecf0f1;
+        font-family: 'Cherry Swash',cursive;
+        font-size: 16px;
+    }
+
+    span {
+        color: #2BD6B4;
+    }
+</style>
+<body>
+<h1>Lavalamp CSS Menu</h1>
+
+<nav>
+    <a href="#">Anasayfa</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">Yazılar</a>
+    <a href="#">Özgeçmiş</a>
+    <a href="#">İletişim</a>
+    <div class="animation start-home"></div>
+</nav>
+
+</body>
+</html>-->
+<!--css animation bar be tite
+<style type="text/css">
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    small {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+        text-align: center;
+        padding: 50px 0;
+        font-weight: 800;
+        margin: 0;
+        letter-spacing: -1px;
+        color: inherit;
+        font-size: 40px;
+    }
+
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        font-weight: 300;
+        color: inherit;
+        padding: 50px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+
+    section {
+        height: 100vh;
+    }
+
+    /* NAVIGATION */
+    nav {
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        padding: 50px 0;
+        box-shadow: 0px 5px 0px #dedede;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #aaa;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 10px;
+    }
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+        transition: all .5s;
+    }
+    nav ul li a:hover {
+        color: #555;
+    }
+
+
+
+    /* stroke */
+    nav.stroke ul li a,
+    nav.fill ul li a {
+        position: relative;
+    }
+    nav.stroke ul li a:after,
+    nav.fill ul li a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #333;
+        height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+        width: 100%;
+    }
+
+    nav.fill ul li a {
+        transition: all 2s;
+    }
+
+    nav.fill ul li a:after {
+        text-align: left;
+        content: '.';
+        margin: 0;
+        opacity: 0;
+    }
+    nav.fill ul li a:hover {
+        color: #023f1c;
+        z-index: 1;
+    }
+    nav.fill ul li a:hover:after {
+        z-index: -10;
+        animation: fill 1s forwards;
+        -webkit-animation: fill 1s forwards;
+        -moz-animation: fill 1s forwards;
+        opacity: 1;
+    }
+
+    /* Circle */
+    nav.circle ul li a {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    nav.circle ul li a:after {
+        display: block;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '.';
+        color: transparent;
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        background: transparent;
+    }
+    nav.circle ul li a:hover:after {
+        -webkit-animation: circle 1.5s ease-in forwards;
+    }
+
+    /* SHIFT */
+    nav.shift ul li a {
+        position:relative;
+        z-index: 1;
+    }
+    nav.shift ul li a:hover {
+        color: #91640F;
+    }
+    nav.shift ul li a:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: #F1C40F;
+        visibility: none;
+        opacity: 0;
+        z-index: -1;
+    }
+    nav.shift ul li a:hover:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+
+
+    /* Blend */
+    nav.blend ul li a {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    nav.blend ul li a:hover {
+        color: #fff;
+    }
+    nav.blend ul li a:before,
+    nav.blend ul li a:after {
+        position: absolute;
+        width: 0px;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        background: #D35400;
+        transition: all .5s;
+        margin: auto;
+        content: '.';
+        color: transparent;
+        z-index: -1;
+        opacity: 0.75;
+    }
+    nav.blend ul li a:before {
+        left: 0;
+    }
+    nav.blend ul li a:after {
+        right: 0;
+    }
+
+    nav.blend ul li a:hover:after,
+    nav.blend ul li a:hover:before {
+        width: 100%;
+    }
+
+    /* DROWN */
+
+    nav.drown ul li a {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    nav.drown ul li a:hover {
+        color: #fff;
+    }
+
+    nav.drown ul li a:before {
+        background: #fff;
+        content: '.';
+        color: transparent;
+        position: absolute;
+        width: 500%;
+        top: 100px;
+        right: 300px;
+        height: 300px;
+        z-index: -1;
+    }
+    nav.drown ul li a:hover:before {
+        left: auto;
+        bottom: auto;
+        right: -50%;
+        top: 0;
+        background: #89C52B;
+    }
+
+
+
+    /* Keyframes */
+    @-webkit-keyframes fill {
+        0% {
+            width: 0%;
+            height: 1px;
+        }
+        50% {
+            width: 100%;
+            height: 1px;
+        }
+        100% {
+            width: 100%;
+            height: 100%;
+            background: #2ECC71;
+        }
+    }
+
+    /* Keyframes */
+    @-webkit-keyframes circle {
+        0% {
+            width: 1px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 1px;
+            z-index: -1;
+            background: #eee;
+            border-radius: 100%;
+        }
+        100% {
+            background: #aaa;
+            height: 5000%;
+            width: 5000%;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 0;
+        }
+    }
+
+
+</style>
+<body>
+
+
+<section style="background: #e74c3c; color: #fff;">
+    <nav class="stroke">
+        <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">İndirilenler</a></li>
+            <li><a href="#">Dosyalar</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </nav>
+</section>
+
+</body>
+-->
+<!DOCTYPE >
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    body{
+        font-family: "Script MT Bold";
+        color: white;
+        background-image:url("foodd.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        max-width: 100%;
+    }
+    .Box{
+        width:900px;
+        border:4px solid black;
+        margin-left:550px;
+    }
+    .Box ul li{
+        width:120px;
+        display: inline-flex;
+        margin:10px auto;
+        text-align: center;
+    }
+    .Box ul li a {
+        color:red;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: sans-serif;
+        padding-left: 30px;
+        font-weight: bold;
+    }
+    .far{
+        width: 300px;
+        height:540px;
+        background-color: black;
+        padding: 55px;
+    }
+    .far h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight:bold;
+        color:white;
+    }
+    .far h4{
+        text-align: justify;
+        font-weight: normal;
+        font-size: 20px;
+        color: darkgrey;
+    }
+    .far h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin:40px auto;
+        color: white;
+    }
+    .far h3{
+        border:6px double white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .far h3 a{
+        color: white;
+    }
+    .container{
+        position: relative;
+        color:white;
+        font-size: 10px;
+        left:150px;
+        top:-425px;
+        text-align: center;
+    }
+    .head{
+        color:white;
+    }
+    .masa{
+        color:red;
+        font-weight: bold;
+    }
+</style>
+<body>
+   <div class="Box">
+     <ul>
+         <li> <a href="#">Home</a> </li>
+         <li> <a href="#">Menu</a> </li>
+         <li> <a href="#">Online Order</a> </li>
+         <li> <a href="#">Team</a> </li>
+         <li> <a href="#">Contact</a> </li>
+     </ul>
+   </div>
+    <div class="far">
+        <h1>Welcome</h1>
+        <h4> Hoş geldiniz .umarım güzel hotelimiz beğenirsiniz,kahvaltı saat 6 sabah,
+        akşam yemeği saat 9akşam</h4>
+        <h2>Reservation</h2>
+        <h3><a href="#">Stard Now</a> </h3>
+    </div>
+   <div class="container">
+       <h2>Online sipariş Yapan liste</h2>
+       <table class="table">
+           <thead>
+           <tr>
+               <th class="head">Ad</th>
+               <th class="head">Yemek</th>
+               <th class="head">Fiyat</th>
+           </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td class="masa">John</td>
+               <td class="masa">pizza</td>
+               <td class="masa">50Tl</td>
+           </tr>
+           <tr>
+               <td class="masa">Mary</td>
+               <td class="masa">lahmacun</td>
+               <td class="masa">20Tl</td>
+           </tr>
+           <tr>
+               <td class="masa">July</td>
+               <td class="masa">kofte</td>
+               <td class="masa">90Tl</td>
+           </tr>
+           </tbody>
+       </table>
+   </div>
+</body>
+</html>

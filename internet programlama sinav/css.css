@@ -1,0 +1,76 @@
+body{
+    font-family: "Brush Script MT";
+    color: white;
+    background-image:url("foodd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    max-width: 100%;
+}
+.Box{
+    width:900px;
+    border:4px solid black;
+    margin-left:550px;
+}
+.Box ul li{
+    width:120px;
+    display: inline-flex;
+    margin:10px auto;
+    text-align: center;
+}
+.Box ul li a {
+    color:red;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.fark{
+    width: 300px;
+    height:540px;
+    background-color: black;
+    padding: 55px;
+}
+.fark h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:white;
+}
+.fark h4{
+    text-align: justify;
+    font-weight: normal;
+    font-size: 20px;
+    color: darkgrey;
+}
+.fark h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+    margin:40px auto;
+    color: white;
+}
+.fark h3{
+    border:6px double white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.fark h3 a{
+    color: white;
+}
+.container{
+    position: relative;
+    color:white;
+    font-size: 10px;
+    left:150px;
+    top:-425px;
+    text-align: center;
+}
+.menu{
+    color:white;
+}
+.renk {
+    color:red;
+    font-weight: bold;
+}
