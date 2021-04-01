@@ -1,0 +1,707 @@
+.fakeimg {
+    height: 200px;
+    background:red;
+  }
+  .jumbotron{
+      padding-bottom: 210px;
+      display: flex;
+      justify-content: space-around;
+    background-image:  url(afrik.jpg);
+     background-size:inherit;
+    background-position: bottom;
+    height: 60px;
+  }
+  .jumbotron img{
+      /*position: relative;*/
+      
+      margin-top: -60px;
+      height: 260px;
+      float: right;
+      justify-content: flex-start;
+      margin-left: -30px;
+  }
+  .jumbotron p{
+      
+      font-size: 100px;
+      color: white;
+      font-weight: 500;
+     /* margin-top: -20px;*/
+      position: relative;
+      padding-right: -300px;
+      text-align: justify;
+      margin: 0 auto;
+      width: 7em;
+      letter-spacing: 0.5em;
+      font-family: castellar; 
+  }
+  @media(max-width:980px){
+      .jumbotron{
+          padding-top: 100px;
+          flex-direction: column-reverse;
+          font-size: 5px;
+          height: 200px;
+          width: 100%;
+      }
+      .jumbotron img{
+          display: none;
+          position: relative;
+          height: 200px;
+          -ms-flex-align: center;
+          width: auto;
+          margin-left: 50%;
+      }
+      .jumbotron p{
+          margin-left:-10px ;
+          margin-top: -150px;
+          font-size: 80px;
+          float: left;
+          font-family: castellar;
+          text-align: justify;
+           margin: 0 auto;
+          width: 7em;
+      }
+  }
+  /*modiification*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+  /*modification*/
+  /*navbar start*/
+.container-fluid{
+      background-color: orange;
+      border-bottom: 5px double orange;
+      font-size: 15px;
+ }
+.navbar-toggler-icon{
+      background-color: black;
+      
+}
+.nav-link{
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color: white;
+   
+}
+.dropdown-item{
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+}
+.dropdown-item:hover{
+    background-color: #ff9b00;
+    color: white;
+}
+  /*modification2*/
+.bg-inverse {
+    background-color: black!important;
+}
+/*navbar end*/
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+} 
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/*third*/
+.turist{
+    
+    
+    margin-bottom: 50px;
+    color:black;
+    font-weight: bold;
+    
+}
+.turist p{
+    position: relative;
+    height: auto;
+    width: 500px;
+    left: 37%;
+    transform: translateX(-50px);
+    margin: 5% 0 2% 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: black;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.col-lg-4 h2{
+    
+     color: red;
+     font-weight: 700;
+}
+.col-lg-4 p{
+    color: black; 
+    font-weight: 700;
+    
+}
+.col-lg-4 p a{
+    background-color: orange;
+}
+
+/*third*/
+/*footer*/
+.bg-grey {
+    background-image:  url(afrik.jpg);
+     background-size:cover;
+    background-position: top;
+    color: black;
+    font-weight: 900;
+    font-size: 10px;
+ }
+ .logo-footer {
+    margin-bottom: 40px;
+ }
+ footer {
+    color:black;
+ }
+ footer p, a {
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+font-family: 'Playfair Display', serif;
+margin-bottom: 40px;
+position: relative;
+}
+footer h6:after {
+position: absolute;
+content: "";
+background:white;
+width: 12%;
+height: 1px;
+left: 0;
+bottom: -20px;
+}
+ .btn-footer {
+             color:white;
+          
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 43px;
+            font-size: 13px;
+            padding: 7px 30px;
+            line-height: 47px;
+ }
+ .btn-footer:hover {
+            
+            text-decoration: none;
+           
+ }
+.form-footer input[type="text"] {
+    border: none;
+border-radius: 16px 0 0 16px;
+outline: none;
+padding-left: 15px;
+
+}
+::placeholder {
+font-size: 10px;
+padding-left: 10px;
+font-style: italic;
+}
+.form-footer input[type="button"] {
+border: none;
+background:white;
+margin-left: -10px;
+color: black;
+outline: none;
+border-radius: 10px 10px 10px 10px;
+padding: 5px 20px;
+font-size: 15px;
+}
+ .social .fa {
+color:white;
+font-size: 22px;
+padding: 10px 15px;
+background: black;
+}
+ footer ul li {
+list-style: none;
+display: block;
+}
+footer ul  {
+padding-left: 0;
+}
+footer ul  li a{
+text-decoration: none;
+color:hsl(0, 0%, 99%);
+text-decoration:none;
+}
+a:hover {
+text-decoration: none;
+color: black !important;
+
+}
+.logo-part {
+border-right: 1px solid black;
+height: 100%;
+}
+.loginup{
+    background-color: #081c77;
+    font-size: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.loginup a{
+    font-size: 20px;
+    color: #fff;
+}
+.loginup a:hover{
+    color: #fff;
+    transform: translateY(-10px);
+}
+/*geleri place*/
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.main h1{
+    position: relative;
+    height: auto;
+    width: 500px;
+    left: 40%;
+    transform: translateX(-50px);
+    margin: 5% 0 2% 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #017bf0;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.main p{
+    position: relative;
+    height: auto;
+    width: 500px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #777; 
+}
+.main .gallery{
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap:2vh;
+    grid-auto-flow: dense;
+}
+.main .gallery .img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+}
+.main .gallery .img:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(2n+3){
+    grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(6n+7){
+   grid-row-start: span 1;
+
+}
+.main .gallery .img:nth-child(8n+9){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+ }
+.main .gallery .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter:brightness(0.5) grayscale(100);
+    transition: 0.3s ease-in-out;
+}
+.main .gallery .img:hover img{
+    filter: brightness(1) grayscale(0);
+}
+@media only screen and (max-width:768px){
+    .turist p{
+        left: 8%;
+    }
+    .main h1{
+        font-size: 1.8em;
+        width: 400px;
+    }
+    .main p{
+        font-size: 1.2em;
+       
+    }
+    .main .gallery{
+        display:grid;
+        grid-template-columns: auto auto auto;
+
+    }
+}
+@media only screen and (max-width:981px){
+    .main h1{
+        font-size: 1.2em;
+        width: 300px;
+    }
+    .main p{
+        font-size: 0.89em; 
+    }
+    .main .gallery{
+        display: block;
+    }
+    .main .gallery .img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 2% 0;
+    }
+    .main .gallery .img img{
+        display: block;
+        filter: brightness(1) grayscale(0);
+    }
+}
+/*galeri end*/
+/*orta  start*/
+.sembol{
+    position: relative;
+    height: auto;
+    width: 500px;
+    left: 40%;
+    transform: translateX(-50px);
+    margin: 5% 0 2% 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #017bf0;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.grid-container {
+    display: grid;
+    height: 500px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+   
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+   
+  }
+  .tchad img{
+      width: 300px;
+      height: 200px;
+  }
+  .tchad h2{
+      margin-top: 10px;
+
+  }
+  .model  {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  .model img{
+      width: 1200px;
+
+  }
+  
+  .model:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .model__close {
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    color: #b61212;
+    text-decoration: none;
+    font-size: 70px;    
+  }
+
+/*orta end*/
+/*contact start*/
+.contact{
+    padding: 4%;
+    height: 400px;
+    margin-bottom: 300px;
+}
+.col-md-3{
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: orange;
+    color: black;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+/*contact end*/
+/*about star*/
+/*.more-stuff-grid {
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+  }
+  
+  .from-left {
+    grid-column: 2 / 3;
+  }
+  
+  .from-right {
+    grid-column: 3 / 4;
+  }
+  /*animation world in css
+  .container-first {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 100%;
+    height: auto;
+}
+h1::first-line{
+    color: aqua;
+    border: 2px solid red;
+    background-color: #000;
+}
+.pseudo::before{
+    content: 'span';
+}    
+
+h1 {
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+}
+h1 span {
+    position: relative;
+}
+.container-btns {
+    position: relative;
+    top: 50px;
+}
+.btn-first {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+@media all and (max-width:800px){
+
+    h1  {
+       float: left;
+        font-size: 70px;
+        width: 100%;
+        color:red;
+        padding: 0;/
+        top: 15px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .container-btns {
+        display: inline-flex;
+       
+    }
+}*/
+/*about end*/
+
+/*footer*/
+/*firstcontact*/
+
