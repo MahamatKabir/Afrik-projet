@@ -559,6 +559,32 @@ height: 100%;
     background: rgba(77, 77, 77, .7);
     transition: all .4s;
   }
+  /*procedur viza*/
+  .visaProcedur{
+      position: relative;
+      border: 4px double green;
+      top: -160px;
+      left: -260px;
+  }
+  .visaProcedur h1{
+      font-size: 40px;
+      color: #ffff;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  
+  .visaProcedur button{
+      color: white;
+      background-color:green;
+      font-weight: bold;
+      border-radius: 40px;
+  }
+  .visaProcedur button:hover{
+      transform:translateY(-3px);
+      
+      color: black;
+
+  }
+  /*procedur end*/
   .model img{
       width: 1200px;
 
@@ -704,4 +730,75 @@ h1 span {
 
 /*footer*/
 /*firstcontact*/
+
+/*evisa csss*/
+
+.evisaform{
+    background-color:rgb(219, 185, 185);
+    width:100%;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.woocommerce{
+    background-color: #777;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: black;
+}
+.vc_row-fluid{
+   
+    background-color:#f39333;
+    font-size: 20px;
+    
+}
+.vc_col-sm-4{
+    position: relative;
+    top: 50px;
+    display:inline-flex;
+    width:33%;
+    font-size: 20px;
+}
+.vc_col-sm-4 h2{
+    font-size: 20px;
+}
+.vc_btn3-left{
+margin-top:20px;   
+background-color:aqua;
+text-align:center;
+}
+.alignlefti{
+    position:relative;
+    left: 120px;
+    top: -120px;
+}
+.woocommerce table {
+    display: table;
+    visibility: visible;
+}
+table {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+tbody {
+    display: table-row-group;
+    
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+    background-color:#777
+}
+/*evisa end*/
 
