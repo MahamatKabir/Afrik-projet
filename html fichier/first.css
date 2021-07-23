@@ -740,14 +740,14 @@ h1 span {
 
 }
 .woocommerce{
-    background-color: #777;
+    background-color: rgb(243, 138, 1);
     padding-left: 100px;
     padding-right: 100px;
     color: black;
 }
 .vc_row-fluid{
    
-    background-color:#f39333;
+    background-color:#fafaf8;
     font-size: 20px;
     
 }
@@ -765,6 +765,8 @@ h1 span {
 margin-top:20px;   
 background-color:aqua;
 text-align:center;
+text-transform:uppercase;
+
 }
 .alignlefti{
     position:relative;
@@ -798,7 +800,7 @@ table th, table td {
     border-width: 1px;
     border-style: solid;
     vertical-align: middle;
-    background-color:#777
+    background-color:rgb(243, 138, 1);
 }
 /*evisa end*/
 
