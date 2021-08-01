@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(170, 160, 118);
+}
+main{
+    text-align: center;
+    background-color: burlywood;
+    
+}
+.container{
+    margin-top: 20%;
+    left: 50%;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:black;
+    background-color: brown;
+    border: 10px double white;
+    border-radius: 50px;
+}
+button{
+    font-size: 25px;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bolder;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    flex-direction: column-reverse;
+}
+button:hover{
+    border:5px double greenyellow;
+    color: rgb(204, 15, 15);
+    transform: translateY(-2px);
+}
